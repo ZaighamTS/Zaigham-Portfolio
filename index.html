@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Game developer portfolio — shipped titles, prototypes, and playable demos."
+    />
+    <title>Game Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#games">Skip to games</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#games">Games</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <p class="hero-eyebrow">Game developer</p>
+          <h1 class="hero-title">Your Name</h1>
+          <p class="hero-lead">
+            I design and build games from prototype to release—focused on feel,
+            clarity, and memorable player moments.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#games">View my work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-glow" aria-hidden="true"></div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+          <div class="about-grid">
+            <p class="about-text">
+              Replace this with your background: engines you use (Unity, Unreal,
+              Godot, custom), roles you’ve held, and what you care about in design
+              and engineering. Keep it concise—recruiters scan first, read second.
+            </p>
+            <ul class="about-tags" aria-label="Focus areas">
+              <li>Gameplay programming</li>
+              <li>Level design</li>
+              <li>Systems &amp; tools</li>
+              <li>Multiplayer / UI</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="games" class="section games">
+        <div class="container">
+          <h2 class="section-title">Games</h2>
+          <p class="section-intro">
+            Selected projects. Published titles include a direct link to play or
+            buy.
+          </p>
+          <div id="games-grid" class="games-grid" role="list"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container contact-inner">
+          <h2 class="section-title">Contact</h2>
+          <p class="contact-text">
+            Open to roles and collaborations. Reach out via email or LinkedIn.
+          </p>
+          <div class="contact-links">
+            <a class="btn btn-primary" href="mailto:you@example.com">Email</a>
+            <a
+              class="btn btn-ghost"
+              href="https://linkedin.com/in/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              class="btn btn-ghost"
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>&copy; <span id="year"></span> Your Name. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <script src="js/games-data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
