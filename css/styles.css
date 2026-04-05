@@ -759,6 +759,39 @@ a:hover {
   border-radius: 4px;
 }
 
+.game-badge--offline {
+  color: #cbd5e1;
+  border-color: rgba(148, 163, 184, 0.45);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.game-collection-label {
+  margin: 0;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.game-collection-list {
+  margin: 0;
+  padding: 0 0 0 1.15rem;
+  max-height: 10rem;
+  overflow-y: auto;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: rgba(241, 243, 248, 0.95);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(61, 214, 195, 0.35) transparent;
+}
+
+.game-card--collection .game-card-expanded-inner {
+  gap: 0.45rem;
+}
+
 .game-desc {
   margin: 0;
   font-size: 0.9375rem;
