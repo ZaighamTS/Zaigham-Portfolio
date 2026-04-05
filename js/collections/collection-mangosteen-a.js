@@ -2,7 +2,7 @@
   window.GAMES = window.GAMES || [];
   window.GAMES.push({
     isCollection: true,
-    title: "Mangosteen Publishing — Series A",
+    title: "Mangosteen Publishing",
     description:
       "Casual catalog delivered for Mangosteen Publishing. Apps were removed from stores after contract end.",
     image: "images/games/mangosteen-games-1.png",
