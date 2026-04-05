@@ -20,6 +20,9 @@
     img.alt = g.title + " screenshot or key art";
     img.loading = "lazy";
     img.decoding = "async";
+    if (/^https?:\/\//i.test(g.image)) {
+      img.referrerPolicy = "no-referrer";
+    }
     media.appendChild(img);
 
     var body = document.createElement("div");

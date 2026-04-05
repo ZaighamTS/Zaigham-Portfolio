@@ -2,6 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Fix relative URLs on GitHub Pages project sites (e.g. /repo vs /repo/) -->
+    <script>
+      (function () {
+        if (!location.protocol || location.protocol === "file:") return;
+        var p = location.pathname;
+        var href;
+        if (p.endsWith("/")) href = p;
+        else if (/\.html?$/i.test(p)) href = p.slice(0, p.lastIndexOf("/") + 1);
+        else href = p + "/";
+        var b = document.createElement("base");
+        b.href = href;
+        document.head.insertBefore(b, document.head.firstChild);
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"

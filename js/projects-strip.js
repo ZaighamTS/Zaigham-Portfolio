@@ -28,6 +28,9 @@
     img.alt = "";
     img.loading = "lazy";
     img.decoding = "async";
+    if (/^https?:\/\//i.test(g.image)) {
+      img.referrerPolicy = "no-referrer";
+    }
 
     var cap = document.createElement("span");
     cap.className = "project-strip-caption";
